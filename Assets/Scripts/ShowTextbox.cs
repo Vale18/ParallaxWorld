@@ -5,11 +5,13 @@ using UnityEngine;
 public class ShowTextbox : MonoBehaviour
 {
     GameObject textbox;
+    PlayQuickSound sound;
     // Start is called before the first frame update
     void Start()
     {
         textbox = GameObject.Find("Canvas");
         textbox.SetActive(false);
+        sound = GameObject.Find("AudioSample").GetComponent<PlayQuickSound>();
     }
 
     // Update is called once per frame
@@ -23,6 +25,7 @@ public class ShowTextbox : MonoBehaviour
         {
             Debug.Log("Player entered trigger");
             textbox.SetActive(true);
+            //sound.Play();
         }
     }
     void OnTriggerExit(Collider other)
