@@ -28,9 +28,9 @@ public class CameraMovement : MonoBehaviour
         }
     } */
 
-    void OnMovement(InputAction.CallbackContext context)
+    void OnMovement(InputValue context)
     {
-        movementInput = context.ReadValue<Vector2>();
+        movementInput = context.Get<Vector2>();
         Debug.Log("Movement Input: " + movementInput);
         timeSinceLastInput = 0.0f;
         isAutoMoving = false;
@@ -70,9 +70,10 @@ public class CameraMovement : MonoBehaviour
         else
         {
             movementInput.x = 0;
+            
         }
 
-        Vector3 movement = new Vector3(movementInput.x, 0, movementInput.y);
+        Vector3 movement = new Vector3(movementInput.x, 0, movementInput.y*3);
         transform.Translate(movement * movementSpeed * Time.deltaTime);
     }
 }
