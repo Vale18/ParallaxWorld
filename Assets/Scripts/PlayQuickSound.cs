@@ -27,7 +27,7 @@ public class PlayQuickSound : MonoBehaviour
 
     public void Play()
     {
-        Play(0);
+        Play();
     }
     public void Play(int soundNumber)
     {
