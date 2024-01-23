@@ -6,13 +6,16 @@ public class ShowTextbox : MonoBehaviour
 {
     GameObject textbox;
     PlayQuickSound sound;
+    AudioSource audioSource =  null;
     // Start is called before the first frame update
     void Start()
     {
         textbox = GameObject.Find("Canvas");
         textbox.SetActive(false);
         sound = GameObject.Find("AudioSample").GetComponent<PlayQuickSound>();
+        audioSource = GetComponent<AudioSource>();
     }
+    
 
     // Update is called once per frame
     void Update()
@@ -25,8 +28,9 @@ public class ShowTextbox : MonoBehaviour
         {
             Debug.Log("Player entered trigger");
             textbox.SetActive(true);
-            //sound.Play();
+            audioSource.Play();
         }
+
     }
     void OnTriggerExit(Collider other)
     {
