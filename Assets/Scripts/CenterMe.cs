@@ -14,11 +14,8 @@ public class CenterMe : MonoBehaviour
     {
         if (other.CompareTag("Player")) // Beispielhaft: Trigger nur beim Betreten eines bestimmten Tags
         {
-            // Berechnen Sie die Mitte des BoxColliders
-            Vector3 colliderCenter = triggerCollider.bounds.center;
-
-            // Setzen Sie die Kamera auf die berechnete Position
-            Camera.main.transform.position = colliderCenter;
+            MySceneManager targetScript = FindObjectOfType<MySceneManager>();
+            targetScript.LoadChurchScene();
         }
     }
 }
