@@ -15,7 +15,13 @@ public class CenterMe : MonoBehaviour
         if (other.CompareTag("Player")) // Beispielhaft: Trigger nur beim Betreten eines bestimmten Tags
         {
             MySceneManager targetScript = FindObjectOfType<MySceneManager>();
-            targetScript.LoadChurchScene();
+            StartCoroutine(delayLoad(targetScript));
         }
+    }
+    IEnumerator delayLoad(MySceneManager targetScript)
+    {
+        
+        yield return new WaitForSeconds(2);
+        targetScript.LoadChurchScene();
     }
 }
