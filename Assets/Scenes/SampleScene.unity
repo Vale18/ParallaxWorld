@@ -125,6 +125,85 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &5327582
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 425062235609830232, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_text
+      value: A local guild representative or forest manager often supervised logging
+        operations, guaranteeing adherence to established rules and regulations.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1101039125637107747, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1155
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743389195531005928, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_Name
+      value: ExampleTrigger 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c60705b299a7b6c40952d15dfa081a02, type: 3}
 --- !u!1 &17145672
 GameObject:
   m_ObjectHideFlags: 0
@@ -3160,6 +3239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 0.6
+  isSidescroller: 1
 --- !u!114 &330585549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3793,6 +3873,92 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 337578227}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &395345467
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 425062235609830232, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_text
+      value: "Depending on the specific wood required for various components of the
+        altar, a significant wood source was found in the hills of the Allg\xE4u.
+        This location proved practical due to the presence of the Danube inflow,
+        facilitating convenient downstream transport to Ulm."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1101039125637107747, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2507
+      objectReference: {fileID: 0}
+    - target: {fileID: 1101039125637107747, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4262
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743389195531005928, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_Name
+      value: ExampleTrigger 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c60705b299a7b6c40952d15dfa081a02, type: 3}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -5280,6 +5446,85 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 586708602}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &596059026
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 425062235609830232, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_text
+      value: This infusion of oversight brought an additional layer of organization
+        and governance to the vibrant tapestry of medieval forest life.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1101039125637107747, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1438
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743389195531005928, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_Name
+      value: ExampleTrigger 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c60705b299a7b6c40952d15dfa081a02, type: 3}
 --- !u!1 &600558026
 GameObject:
   m_ObjectHideFlags: 0
@@ -8577,6 +8822,92 @@ Transform:
   m_Children: []
   m_Father: {fileID: 287662930}
   m_LocalEulerAnglesHint: {x: -5, y: 0, z: 0}
+--- !u!1001 &1175033006
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 425062235609830232, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_text
+      value: The tree trunks were strategically placed on the water, a method that
+        also mitigated the risk of internal wood parasites, ensuring the quality
+        of the timber. The river provided a direct link to the transportation of
+        lumber, enhancing the practicality of large-scale projects.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1101039125637107747, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.217
+      objectReference: {fileID: 0}
+    - target: {fileID: 1101039125637107747, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.3484
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743389195531005928, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_Name
+      value: ExampleTrigger 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c60705b299a7b6c40952d15dfa081a02, type: 3}
 --- !u!1 &1221931190
 GameObject:
   m_ObjectHideFlags: 0
@@ -12767,17 +13098,17 @@ PrefabInstance:
     - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.555
+      value: -1.04
       objectReference: {fileID: 0}
     - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.35
+      value: -0.94
       objectReference: {fileID: 0}
     - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.836
+      value: -3.65
       objectReference: {fileID: 0}
     - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
         type: 3}
@@ -12897,6 +13228,10 @@ SceneRoots:
   - {fileID: 164268501}
   - {fileID: 1140475435}
   - {fileID: 5075807030156739768}
+  - {fileID: 5327582}
+  - {fileID: 596059026}
+  - {fileID: 395345467}
+  - {fileID: 1175033006}
   - {fileID: 286059863}
   - {fileID: 333891317}
   - {fileID: 287662930}
