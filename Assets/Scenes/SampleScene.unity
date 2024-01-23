@@ -2568,7 +2568,7 @@ GameObject:
   - component: {fileID: 300822399}
   m_Layer: 0
   m_Name: CHURCHDOOR
-  m_TagString: ChurchDoor
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2581,11 +2581,11 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300822398}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: bdf331da33f465543a8e0d67ff26d1c8, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 56f6ac8804973d24e832821762658d62, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
-  m_TargetTexture: {fileID: 8400000, guid: c374d1d6a5b9941458400e6e2c50f386, type: 2}
+  m_TargetTexture: {fileID: 8400000, guid: db0f395b03fd0fe4394c651d7e550f87, type: 2}
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: <noninit>
@@ -2629,7 +2629,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8297448aa3972694594acd4ff0e268ec, type: 2}
+  - {fileID: 2100000, guid: 18ca6e52e4462b44aa433e5d68428f79, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2668,8 +2668,8 @@ Transform:
   m_GameObject: {fileID: 300822398}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.24, y: 0.089, z: -5.76}
-  m_LocalScale: {x: 1.0884, y: 1.6326001, z: 1.0884}
+  m_LocalPosition: {x: 19.28, y: 1.65, z: -4.84}
+  m_LocalScale: {x: 5.3982463, y: 8.097369, z: 5.3982463}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1131852900}
@@ -6586,8 +6586,8 @@ Transform:
   m_GameObject: {fileID: 920969572}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.083, y: 0, z: -1.89}
-  m_LocalScale: {x: 0.76036507, y: 1.4631587, z: 2.6737406}
+  m_LocalPosition: {x: 0.083, y: 0, z: -2.72}
+  m_LocalScale: {x: 0.76036507, y: 5.0138063, z: 5.4704733}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1131852900}
@@ -6621,7 +6621,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -7774,12 +7774,12 @@ VideoPlayer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131852899}
-  m_Enabled: 0
-  m_VideoClip: {fileID: 32900000, guid: cc023133306972245a2b2e1baa572372, type: 3}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: f2651fbb04be9df47abf7a802fb7edb4, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
-  m_TargetTexture: {fileID: 8400000, guid: c374d1d6a5b9941458400e6e2c50f386, type: 2}
+  m_TargetTexture: {fileID: 8400000, guid: db0f395b03fd0fe4394c651d7e550f87, type: 2}
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: <noninit>
@@ -7823,7 +7823,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8c8186dc45eb0294c8f98da1c7662ffa, type: 2}
+  - {fileID: 2100000, guid: 368be178c905db643b6870bee7c8fab3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10300,8 +10300,8 @@ Transform:
   m_GameObject: {fileID: 1708447047}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: 28.11, y: 6.21, z: -6.89}
-  m_LocalScale: {x: 2.6748605, y: 2.6748605, z: 2.6748605}
+  m_LocalPosition: {x: 30.11, y: 6.21, z: -6.89}
+  m_LocalScale: {x: 2.6748605, y: 2.6748605, z: 2.8757424}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 287662930}
@@ -10348,7 +10348,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cd155f94c107d7a419cea959852ca2f5, type: 2}
+  - {fileID: 2100000, guid: 43465a5b2840e4e40a44ffaf55d6db91, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10693,7 +10693,7 @@ Transform:
   m_GameObject: {fileID: 1814972553}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 18.19, y: 0.81, z: -0.33980942}
+  m_LocalPosition: {x: 19.21, y: 0.81, z: -0.33980942}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
