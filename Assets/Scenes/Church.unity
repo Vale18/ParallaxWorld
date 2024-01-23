@@ -2737,6 +2737,185 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1466625772}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1476767071
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 425062235609830232, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_text
+      value: Of at least fifty altars that once existed, only 6 remain today, including
+        this Hutz altar. Originally, the altar stood in the tower vestibule
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743389195531005928, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_Name
+      value: ExampleTrigger 1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.5466895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 39.7531
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c60705b299a7b6c40952d15dfa081a02, type: 3}
+--- !u!1001 &1497095037
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 425062235609830232, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_text
+      value: "The workshop of Niklaus Weckmann (around 1450/44\u20131528 Ulm) created
+        the shrine featuring the Kin of Christ. Rich in gold, the shrine with its
+        figures still adheres to the Late Gothic style"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5665868612058515340, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.02451789
+      objectReference: {fileID: 0}
+    - target: {fileID: 5665868612058515340, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.02451789
+      objectReference: {fileID: 0}
+    - target: {fileID: 5665868612058515340, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.02451789
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743389195531005928, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_Name
+      value: ExampleTrigger 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8526708
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8526708
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8542433
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 66.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c60705b299a7b6c40952d15dfa081a02, type: 3}
 --- !u!1 &1561457681
 GameObject:
   m_ObjectHideFlags: 0
@@ -3174,6 +3353,111 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1865729024}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1905100254
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 425062235609830232, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_text
+      value: On the altar paintings, Martin Schaffner portrayed three living relatives
+        of the Hutz goldsmith-patron family as saints, a practice that became more
+        common in the decade before the Reformation but was still considered daring
+      objectReference: {fileID: 0}
+    - target: {fileID: 5665868612058515340, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.02451789
+      objectReference: {fileID: 0}
+    - target: {fileID: 5665868612058515340, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.02451789
+      objectReference: {fileID: 0}
+    - target: {fileID: 5665868612058515340, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.02451789
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743389195531005928, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_Name
+      value: ExampleTrigger 1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8526708
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8526708
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8542433
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 66.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483976065330920787, guid: c60705b299a7b6c40952d15dfa081a02,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c60705b299a7b6c40952d15dfa081a02, type: 3}
 --- !u!1 &2084758005
 GameObject:
   m_ObjectHideFlags: 0
@@ -11512,3 +11796,6 @@ SceneRoots:
   - {fileID: 671855581}
   - {fileID: 1561457683}
   - {fileID: 3570240593201657022}
+  - {fileID: 1497095037}
+  - {fileID: 1905100254}
+  - {fileID: 1476767071}
