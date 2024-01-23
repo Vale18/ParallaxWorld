@@ -41,7 +41,7 @@ public class CameraMovement : MonoBehaviour
         timeSinceLastInput += Time.deltaTime;
 
         // Automatische Bewegung nach 2 Sekunden Inaktivität
-        if (timeSinceLastInput > 2.0f)
+        if (timeSinceLastInput > 5.0f)
         {
             StartAutoMovement();
         }
