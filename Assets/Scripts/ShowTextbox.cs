@@ -10,9 +10,8 @@ public class ShowTextbox : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        textbox = GameObject.Find("Canvas");
+        textbox = transform.Find("Canvas").gameObject;
         textbox.SetActive(false);
-        sound = GameObject.Find("AudioSample").GetComponent<PlayQuickSound>();
         audioSource = GetComponent<AudioSource>();
     }
     
