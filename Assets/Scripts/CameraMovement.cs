@@ -84,4 +84,17 @@ public class CameraMovement : MonoBehaviour
         Vector3 movement = new Vector3(movementInput.x*2, 0, movementInput.y*3);
         transform.Translate(movement * movementSpeed * Time.deltaTime);
     }
+
+    public void ToggleMovement()
+    {
+        var rb = GetComponent<Rigidbody>();
+        if ((rb.constraints & RigidbodyConstraints.FreezePosition) == RigidbodyConstraints.FreezePosition)
+        {
+            rb.constraints = RigidbodyConstraints.FreezePosition;
+        }
+        else
+        {
+            rb.constraints &= ~RigidbodyConstraints.FreezePosition;
+        }
+    }
 }
