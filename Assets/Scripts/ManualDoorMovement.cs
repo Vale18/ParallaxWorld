@@ -13,6 +13,7 @@ public class ManualDoorMovement : MonoBehaviour
     private bool isMovingCamera = false;
     public RenderTexture videoRenderer;
     private GameObject forestDoorObj;
+    private InputManagement inputManager;
     void Awake()
     {
         // Zugriff auf die Komponenten
@@ -20,7 +21,8 @@ public class ManualDoorMovement : MonoBehaviour
         cameraMovement = GetComponent<CameraMovement>();
         forestDoorObj = GameObject.FindGameObjectWithTag("ForrestDoor");
         videoPlayerForForestDoor = forestDoorObj.GetComponent<VideoPlayer>();
-        
+        inputManager = FindObjectOfType<InputManagement>();
+        inputManager.OnInteractionInput += Interact;
         // Deaktivieren der Komponenten
         ToggleManualMode();
 
@@ -45,7 +47,7 @@ public class ManualDoorMovement : MonoBehaviour
             cameraMovement.enabled = !cameraMovement.enabled;
     }
    
-    public void OnInteraction(InputValue context)
+    public void Interact(float press)
     {
         if (!isMovingCamera && collider.isTrigger)
         {
@@ -57,7 +59,7 @@ public class ManualDoorMovement : MonoBehaviour
     [ContextMenu("Trigger OnInteraction")]
     void DebugOnInteraction()
     {
-        OnInteraction(null);
+        Interact(1f);
     }
 
     void StartCameraMove()

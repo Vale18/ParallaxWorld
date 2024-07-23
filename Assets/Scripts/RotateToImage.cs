@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -12,7 +14,8 @@ public class RotateToImage : MonoBehaviour
     private bool rotateCamera = false;
     private Quaternion targetRotation;
     private MotionBlur motionBlur;
-
+    private InputManagement inputManager;
+    public GameObject eyeOutline, pupil;
     void Start()
     {
         // Suche nach dem MotionBlur-Effekt im Volume
@@ -20,6 +23,8 @@ public class RotateToImage : MonoBehaviour
         {
             Debug.LogError("MotionBlur effect not found in the post-processing volume.");
         }
+            inputManager = FindObjectOfType<InputManagement>();
+            
     }
 
     void FixedUpdate()
@@ -32,8 +37,8 @@ public class RotateToImage : MonoBehaviour
             // Wenn die Rotation nahezu abgeschlossen ist, stoppe die Rotation und den Blur
             if (Quaternion.Angle(other.transform.localRotation, targetRotation) < 0.1f)
             {
-                other.transform.rotation = targetRotation;
                 rotateCamera = false;
+                other.transform.rotation = targetRotation;
                 if (motionBlur != null)
                 {
                     motionBlur.active = false;
@@ -47,20 +52,60 @@ public class RotateToImage : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             this.other = other.transform.parent.gameObject;
-             // Setze die Zielrotation (90 Grad nach links)
-            targetRotation = Quaternion.Euler(other.transform.localEulerAngles.x, other.transform.localEulerAngles.y - 90, other.transform.localEulerAngles.z);
-            rotateCamera = true;
-            if (motionBlur != null)
-            {
-                motionBlur.active = true; // Aktiviere den Blur-Effekt
-            }
+            SetEye(false);
+            TeleportToCenter();
             ToggleCameraControl();
+            RotateCamera(-90f);
+            inputManager.OnInteractionInput += ReturnToNormal;
         }
     }
 
+    void TeleportToCenter()
+    {
+        Vector3 centerPos = other.transform.position;
+        centerPos.x = transform.parent.localPosition.x;
+        centerPos.z = transform.parent.localPosition.z;
+        other.transform.position = centerPos;
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        SetEye(true);
+    }
+
+    void SetEye(bool set)
+    {
+        eyeOutline.SetActive(set);
+        pupil.SetActive(set);
+    }
+    void RotateCamera(float rotationValue)
+    {
+        rotateCamera = true;
+        // Setze die Zielrotation (90 Grad nach links)
+        targetRotation = Quaternion.Euler(other.transform.localEulerAngles.x, other.transform.localEulerAngles.y  + rotationValue, other.transform.localEulerAngles.z);
+        if (motionBlur != null)
+        {
+            motionBlur.active = true; // Aktiviere den Blur-Effekt
+        }
+    }
     void ToggleCameraControl()
     {
             var cameraMovement = other.transform.GetComponent<CameraMovement>();
             cameraMovement.ToggleMovement();
+    }
+
+    private void ReturnToNormal(float press)
+    {
+        if (!rotateCamera)
+        {
+            inputManager.OnInteractionInput -= ReturnToNormal;
+            RotateCamera(90f);
+            StartCoroutine(DelayUnlockCameraControl());
+        }
+    }
+
+    private IEnumerator DelayUnlockCameraControl()
+    {
+        yield return new WaitForSeconds(5);
+        ToggleCameraControl();
     }
 }
