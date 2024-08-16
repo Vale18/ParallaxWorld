@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,8 +9,14 @@ public class CameraMovement : MonoBehaviour
     private float timeSinceLastInput = 0.0f;
     private bool isAutoMoving = false;
     public bool isSidescroller = true;
-
-/*     void OnEnable()
+    private InputManagement inputManager;
+    private bool idle = false;
+     void Start()
+    {
+        inputManager = FindObjectOfType<InputManagement>();
+        inputManager.OnMovementInput += Move;
+    }
+    /*     void OnEnable()
     {
         var gamepad = Gamepad.current;
         if (gamepad != null)
@@ -29,27 +36,30 @@ public class CameraMovement : MonoBehaviour
         }
     } */
 
-    void OnMovement(InputValue context)
+    void Move(Vector2 movementInput)
     {
-        movementInput = context.Get<Vector2>();
         Debug.Log("Movement Input: " + movementInput);
         timeSinceLastInput = 0.0f;
         isAutoMoving = false;
+        this.movementInput = movementInput;
     }
 
     void FixedUpdate()
     {
         timeSinceLastInput += Time.deltaTime;
+        if (!idle)
+        {
+            // Automatische Bewegung nach 5 Sekunden Inaktivität
+            if (timeSinceLastInput > 5.0f)
+            {
+                StartAutoMovement();
+            }
+            else
+            {
+                PerformManualMovement();
+            }
+        }
 
-        // Automatische Bewegung nach 5 Sekunden Inaktivität
-        if (timeSinceLastInput > 5.0f)
-        {
-            StartAutoMovement();
-        }
-        else
-        {
-            PerformManualMovement();
-        }
     }
 
     void StartAutoMovement()
@@ -83,5 +93,10 @@ public class CameraMovement : MonoBehaviour
         }  
         Vector3 movement = new Vector3(movementInput.x*2, 0, movementInput.y*3);
         transform.Translate(movement * movementSpeed * Time.deltaTime);
+    }
+
+    public void ToggleMovement()
+    {
+        idle = !idle;
     }
 }

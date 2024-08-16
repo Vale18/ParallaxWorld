@@ -17,8 +17,9 @@ public class MySceneManager : MonoBehaviour
     {
         
     }
-    public void LoadChurchScene()
+
+    public void LoadNextScene(int sceneID)
     {
-        SceneManager.LoadScene("Church");
+        SceneManager.LoadScene(sceneID);
     }
 }
