@@ -38,7 +38,6 @@ public class CameraMovement : MonoBehaviour
 
     void Move(Vector2 movementInput)
     {
-        Debug.Log("Movement Input: " + movementInput);
         timeSinceLastInput = 0.0f;
         isAutoMoving = false;
         this.movementInput = movementInput;
