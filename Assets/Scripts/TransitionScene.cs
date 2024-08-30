@@ -5,6 +5,7 @@ using UnityEngine;
 public class TransitionScene : MonoBehaviour
 {
     [SerializeField] private int sceneID;
+    [SerializeField] private int waitTime = 2;
     void Awake()
     {
         
@@ -21,7 +22,7 @@ public class TransitionScene : MonoBehaviour
     IEnumerator delayLoad(MySceneManager targetScript)
     {
         
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(waitTime);
         targetScript.LoadNextScene(sceneID);
     }
 }
