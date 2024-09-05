@@ -18,7 +18,6 @@ public class RotateToImage : MonoBehaviour
     public GameObject eyeOutline, pupil;
     void Start()
     {
-        // Suche nach dem MotionBlur-Effekt im Volume
         if (!postProcessingVolume.profile.TryGet<MotionBlur>(out motionBlur))
         {
             Debug.LogError("MotionBlur effect not found in the post-processing volume.");
