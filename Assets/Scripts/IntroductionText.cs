@@ -46,6 +46,7 @@ public class IntroductionText : MonoBehaviour
             yield return new WaitForSeconds(8);
         }
         ToggleCameraControl();
+        Destroy(this);
     }
     void ToggleCameraControl()
     {
