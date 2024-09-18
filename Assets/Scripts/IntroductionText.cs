@@ -50,7 +50,7 @@ public class IntroductionText : MonoBehaviour
     }
     void ToggleCameraControl()
     {
-        var cameraMovement = other.transform.GetComponent<CameraMovement>();
-        cameraMovement.ToggleMovement();
+        var playerController = other.transform.GetComponent<PlayerController>();
+        playerController.ToggleMovement();
     }
 }

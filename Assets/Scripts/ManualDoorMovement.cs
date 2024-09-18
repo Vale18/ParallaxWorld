@@ -5,7 +5,7 @@ using UnityEngine.Video;
 public class ManualDoorMovement : MonoBehaviour
 {
     private BoxCollider collider;
-    private CameraMovement cameraMovement;
+    private PlayerController cameraMovement;
     private VideoPlayer videoPlayerForForestDoor;
     public float cameraMoveTime = 12f;
     private float cameraMoveSpeed;
@@ -18,7 +18,7 @@ public class ManualDoorMovement : MonoBehaviour
     {
         // Zugriff auf die Komponenten
         collider = GetComponentInChildren<BoxCollider>();
-        cameraMovement = GetComponent<CameraMovement>();
+        cameraMovement = GetComponent<PlayerController>();
         forestDoorObj = GameObject.FindGameObjectWithTag("ForrestDoor");
         videoPlayerForForestDoor = forestDoorObj.GetComponent<VideoPlayer>();
         inputManager = FindObjectOfType<InputManagement>();
@@ -44,9 +44,9 @@ public class ManualDoorMovement : MonoBehaviour
             collider.isTrigger = !collider.isTrigger;
 
         if (cameraMovement != null)
-            cameraMovement.enabled = !cameraMovement.enabled;
+            cameraMovement.ToggleMovement();
     }
-   
+
     public void Interact(float press)
     {
         if (!isMovingCamera && collider.isTrigger)

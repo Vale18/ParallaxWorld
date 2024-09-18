@@ -50,6 +50,10 @@ public class RotateToImage : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            if(transform.position.z <= other.transform.position.z)
+            {
+                return;
+            }
             this.other = other.transform.parent.gameObject;
             SetEye(false);
             TeleportToCenter();
@@ -88,8 +92,8 @@ public class RotateToImage : MonoBehaviour
     }
     void ToggleCameraControl()
     {
-            var cameraMovement = other.transform.GetComponent<CameraMovement>();
-            cameraMovement.ToggleMovement();
+            var playerController = other.transform.GetComponent<PlayerController>();
+            playerController.ToggleMovement();
     }
 
     private void ReturnToNormal(float press)
