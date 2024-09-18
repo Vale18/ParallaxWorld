@@ -192,6 +192,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2839683393753296989, guid: e1faa7d21f0566047a8a030d91a09cea,
+        type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839683393753296989, guid: e1faa7d21f0566047a8a030d91a09cea,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8110b118548900544a53f7d45fc61e8a, type: 3}
+    - target: {fileID: 6661204041293667335, guid: e1faa7d21f0566047a8a030d91a09cea,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6661204041293667335, guid: e1faa7d21f0566047a8a030d91a09cea,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 42978345a1389be448841c9a811f58d5, type: 3}
+    - target: {fileID: 6661204041293667335, guid: e1faa7d21f0566047a8a030d91a09cea,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

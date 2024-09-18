@@ -14,6 +14,7 @@ public class ManualDoorMovement : MonoBehaviour
     public RenderTexture videoRenderer;
     private GameObject forestDoorObj;
     private InputManagement inputManager;
+    public AudioSource openDoorSound;
     void Awake()
     {
         // Zugriff auf die Komponenten
@@ -53,6 +54,7 @@ public class ManualDoorMovement : MonoBehaviour
         {
             forestDoorObj.transform.GetChild(0).gameObject.SetActive(false); // Deaktiviere Video Preview
             videoPlayerForForestDoor.Play();
+            openDoorSound.Play();
             StartCameraMove();
         }
     }
