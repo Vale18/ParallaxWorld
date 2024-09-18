@@ -9,14 +9,14 @@ public class IntroductionText : MonoBehaviour
 {   
     [SerializeField][TextArea]
     public List<string> textList;
-    private TMP_Text tmpro;
+    public TMP_Text tmpro;
     private InputManagement inputManager;
 
     private GameObject other;
     // Start is called before the first frame update
     void Start()
     {
-        tmpro = GetComponentInChildren<TMP_Text>();
+        /*tmpro = GetComponentInChildren<TMP_Text>();*/
         inputManager = FindObjectOfType<InputManagement>();
     }
     

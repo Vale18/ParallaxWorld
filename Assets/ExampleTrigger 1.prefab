@@ -71,8 +71,8 @@ MonoBehaviour:
     selbst feinste Details m\xFChelos herauszuarbeiten. Anders als andere H\xF6lzer
     neigte es kaum zu Rissen, wodurch die Werke dauerhaft und formstabil blieben."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: cf36214eb4b691b41a1d74615a5e18b0, type: 2}
-  m_sharedMaterial: {fileID: -6088313570406275914, guid: cf36214eb4b691b41a1d74615a5e18b0,
+  m_fontAsset: {fileID: 11400000, guid: 6dbb35f72511f2843bc308456eb77ff2, type: 2}
+  m_sharedMaterial: {fileID: 6557213087534932193, guid: 6dbb35f72511f2843bc308456eb77ff2,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
