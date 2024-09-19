@@ -13,16 +13,17 @@ public class ShowOverlay : MonoBehaviour
         canvas = GetComponent<Canvas>();
         inputManager.OnMovementInput += HandleMovementInput;
         inputManager.OnInteractionInput += PrimaryPressed;
-        inactivityCoroutine = StartCoroutine(InactivityCheck(45));
+        canvas.enabled = false;
     }
     void PrimaryPressed(float input)
     {
-        if (input > 0.5f)
-        {
-            canvas.enabled = !canvas.enabled;
-        }
+            canvas.enabled = false;
     }
 
+    public void IntroOverlayShownDelay()
+    {
+        inactivityCoroutine = StartCoroutine(InactivityCheck(31));
+    }
     void HandleMovementInput(Vector2 input)
     {
         if (input.magnitude < 0.01f)
@@ -46,9 +47,17 @@ public class ShowOverlay : MonoBehaviour
         }
     }
 
-    private IEnumerator InactivityCheck(float time = 5)
+    private IEnumerator InactivityCheck()
     {
+        
+        yield return new WaitForSeconds(5);
+        canvas.enabled = true;
+    }
+    private IEnumerator InactivityCheck(float time)
+    {
+        inputManager.OnMovementInput -= HandleMovementInput;
         yield return new WaitForSeconds(time);
+        inputManager.OnMovementInput += HandleMovementInput;
         canvas.enabled = true;
     }
 

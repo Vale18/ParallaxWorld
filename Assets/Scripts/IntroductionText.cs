@@ -11,13 +11,14 @@ public class IntroductionText : MonoBehaviour
     public List<string> textList;
     public TMP_Text tmpro;
     private InputManagement inputManager;
-
+    private ShowOverlay showOverlay;
     private GameObject other;
     // Start is called before the first frame update
     void Start()
     {
         /*tmpro = GetComponentInChildren<TMP_Text>();*/
         inputManager = FindObjectOfType<InputManagement>();
+        showOverlay = FindObjectOfType<ShowOverlay>();
     }
     
     // Update is called once per frame
@@ -33,6 +34,7 @@ public class IntroductionText : MonoBehaviour
             this.other = other.transform.parent.gameObject;
             ToggleCameraControl();
             StartCoroutine(DelayText());
+            showOverlay.IntroOverlayShownDelay();
         }
         
         

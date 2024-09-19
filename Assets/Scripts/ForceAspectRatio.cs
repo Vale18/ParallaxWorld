@@ -1,11 +1,19 @@
 using UnityEngine;
+using UnityEngine.UI; // Für CanvasScaler
 
 public class ForceAspectRatio : MonoBehaviour
 {
     public float targetAspect = 2f / 3f; // Beispiel für ein Hochformat-Seitenverhältnis
+    private CanvasScaler canvasScaler;
 
     void Start()
     {
+        // Finde das Canvas mit dem Tag "Overlay"
+        GameObject canvasObject = GameObject.FindWithTag("Overlay");
+        if (canvasObject != null)
+        {
+            canvasScaler = canvasObject.GetComponent<CanvasScaler>();
+        }
         AdjustAspectRatio();
     }
 
@@ -35,6 +43,12 @@ public class ForceAspectRatio : MonoBehaviour
             rect.x = (1.0f - scaleWidth) / 2.0f;
             rect.y = 0;
             camera.rect = rect;
+        }
+
+        // Update the Canvas Scaler to match the camera aspect ratio
+        if (canvasScaler != null)
+        {
+            canvasScaler.matchWidthOrHeight = (scaleHeight < 1.0f) ? 1.0f : 0.0f; // Höhe bevorzugen, wenn das Fenster höher als das Zielseitenverhältnis ist, sonst Breite
         }
     }
 
