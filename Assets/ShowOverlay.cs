@@ -24,6 +24,10 @@ public class ShowOverlay : MonoBehaviour
     {
         inactivityCoroutine = StartCoroutine(InactivityCheck(31));
     }
+    public void RotateScreenOverlayShownDelay()
+    {
+        inactivityCoroutine = StartCoroutine(InactivityCheck(4));
+    }
     void HandleMovementInput(Vector2 input)
     {
         if (input.magnitude < 0.01f)

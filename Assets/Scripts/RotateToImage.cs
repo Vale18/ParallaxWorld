@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.UI;
 using Cache = Unity.VisualScripting.Cache;
 
 public class RotateToImage : MonoBehaviour
@@ -16,6 +17,7 @@ public class RotateToImage : MonoBehaviour
     private MotionBlur motionBlur;
     private InputManagement inputManager;
     public GameObject eyeOutline, pupil;
+    private ShowOverlay showOverlay;
     void Start()
     {
         if (!postProcessingVolume.profile.TryGet<MotionBlur>(out motionBlur))
@@ -23,7 +25,8 @@ public class RotateToImage : MonoBehaviour
             Debug.LogError("MotionBlur effect not found in the post-processing volume.");
         }
             inputManager = FindObjectOfType<InputManagement>();
-            
+            GameObject canvasObject = GameObject.FindWithTag("Overlay");
+            showOverlay = FindObjectOfType<ShowOverlay>();
     }
 
     void FixedUpdate()
@@ -100,6 +103,7 @@ public class RotateToImage : MonoBehaviour
     {
         if (!rotateCamera)
         {
+            showOverlay.RotateScreenOverlayShownDelay();
             inputManager.OnInteractionInput -= ReturnToNormal;
             RotateCamera(90f);
             StartCoroutine(DelayUnlockCameraControl());
