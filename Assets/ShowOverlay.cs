@@ -22,7 +22,7 @@ public class ShowOverlay : MonoBehaviour
 
     public void IntroOverlayShownDelay()
     {
-        inactivityCoroutine = StartCoroutine(InactivityCheck(31));
+        inactivityCoroutine = StartCoroutine(InactivityCheck(36));
     }
     public void RotateScreenOverlayShownDelay()
     {

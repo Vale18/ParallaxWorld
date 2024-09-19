@@ -45,7 +45,7 @@ public class IntroductionText : MonoBehaviour
         foreach (var textblock in textList)
         {
             tmpro.text = textblock;
-            yield return new WaitForSeconds(8);
+            yield return new WaitForSeconds(11);
         }
         ToggleCameraControl();
         Destroy(this);
