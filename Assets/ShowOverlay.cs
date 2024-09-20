@@ -22,10 +22,14 @@ public class ShowOverlay : MonoBehaviour
 
     public void IntroOverlayShownDelay()
     {
+        if(inactivityCoroutine != null)
+            StopCoroutine(inactivityCoroutine);
         inactivityCoroutine = StartCoroutine(InactivityCheck(44));
     }
     public void RotateScreenOverlayShownDelay()
     {
+        if(inactivityCoroutine != null)
+            StopCoroutine(inactivityCoroutine);
         inactivityCoroutine = StartCoroutine(InactivityCheck(5));
     }
     void HandleMovementInput(Vector2 input)
@@ -59,6 +63,7 @@ public class ShowOverlay : MonoBehaviour
     }
     private IEnumerator InactivityCheck(float time)
     {
+        
         inputManager.OnMovementInput -= HandleMovementInput;
         yield return new WaitForSeconds(time);
         inputManager.OnMovementInput += HandleMovementInput;

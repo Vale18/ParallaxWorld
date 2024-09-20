@@ -7,6 +7,8 @@ public class ShowTextbox : MonoBehaviour
     GameObject textbox;
     PlayQuickSound sound;
     AudioSource audioSource =  null;
+
+    private bool revealed;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,9 +27,14 @@ public class ShowTextbox : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            Debug.Log("Player entered trigger");
-            textbox.SetActive(true);
-            audioSource.Play();
+            if (!revealed)
+            {
+                Debug.Log("Player entered trigger");
+                textbox.SetActive(true);
+                audioSource.Play();
+                revealed = true;
+            }
+
         }
 
     }
@@ -36,7 +43,7 @@ public class ShowTextbox : MonoBehaviour
         if(other.tag == "Player")
         {
             Debug.Log("Player left trigger");
-            StartCoroutine(DeactivateAfterDelay());
+            /*textbox.SetActive(false);*/
         }
     }
     IEnumerator DeactivateAfterDelay()
