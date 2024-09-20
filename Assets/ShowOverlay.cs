@@ -4,7 +4,7 @@ using UnityEngine;
 public class ShowOverlay : MonoBehaviour
 {
     private InputManagement inputManager;
-    private Canvas canvas;
+    public Canvas canvas;
     private Coroutine inactivityCoroutine;
 
     void Start()

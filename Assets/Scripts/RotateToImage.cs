@@ -135,7 +135,8 @@ public class RotateToImage : MonoBehaviour
 
     private IEnumerator DelayUnlockCameraControl()
     {
-        yield return new WaitForSeconds(5);
+        showOverlay.canvas.enabled = false;
+        yield return new WaitForSeconds(4.1f);
         ActivateCameraMovement();
     }
 }
