@@ -111,4 +111,10 @@ public class PlayerController : MonoBehaviour
     {
         idle = !idle;
     }
+
+    public void ActivateIdle()
+    {
+        idle = true;
+        
+    }
 }

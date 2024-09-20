@@ -18,6 +18,8 @@ public class RotateToImage : MonoBehaviour
     private InputManagement inputManager;
     public GameObject eyeOutline, pupil;
     private ShowOverlay showOverlay;
+    private CharacterController characterController;
+    private PlayerController playerController;
     void Start()
     {
         if (!postProcessingVolume.profile.TryGet<MotionBlur>(out motionBlur))
@@ -27,6 +29,9 @@ public class RotateToImage : MonoBehaviour
             inputManager = FindObjectOfType<InputManagement>();
             GameObject canvasObject = GameObject.FindWithTag("Overlay");
             showOverlay = FindObjectOfType<ShowOverlay>();
+            var maincamera = GameObject.FindGameObjectWithTag("MainCamera");
+            characterController = maincamera.GetComponent<CharacterController>();
+            playerController = maincamera.GetComponent<PlayerController>();
     }
 
     void FixedUpdate()
@@ -59,13 +64,19 @@ public class RotateToImage : MonoBehaviour
             }
             this.other = other.transform.parent.gameObject;
             SetEye(false);
-            TeleportToCenter();
-            ToggleCameraControl();
-            RotateCamera(-90f);
+            DeactivateCameraMovement();
+            StartCoroutine(RotateDelay());
             inputManager.OnInteractionInput += ReturnToNormal;
         }
     }
 
+    IEnumerator RotateDelay()
+    {
+        yield return new WaitForSeconds(0.2f);
+        TeleportToCenter();
+        yield return new WaitForSeconds(0.1f);
+        RotateCamera(-90f);
+    }
     void TeleportToCenter()
     {
         Vector3 centerPos = other.transform.position;
@@ -93,6 +104,18 @@ public class RotateToImage : MonoBehaviour
             motionBlur.active = true; // Aktiviere den Blur-Effekt
         }
     }
+
+    void DeactivateCameraMovement()
+    {
+        characterController.enabled = false;
+        playerController.enabled = false;
+    }
+
+    void ActivateCameraMovement()
+    {
+        characterController.enabled = true;
+        playerController.enabled = true;
+    }
     void ToggleCameraControl()
     {
             var playerController = other.transform.GetComponent<PlayerController>();
@@ -113,6 +136,6 @@ public class RotateToImage : MonoBehaviour
     private IEnumerator DelayUnlockCameraControl()
     {
         yield return new WaitForSeconds(5);
-        ToggleCameraControl();
+        ActivateCameraMovement();
     }
 }
